@@ -184,6 +184,7 @@ h6,
   .navbar form button {
     padding: 10px 24px; } }
 .about-headding {
+  background-image: url(/sourch/images/banner.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -288,7 +289,7 @@ h6,
     color: #1e868b; }
 
 .what-are {
-  background-image: url(/images/about.png);
+  background-image: url(/sourch/images/about.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
