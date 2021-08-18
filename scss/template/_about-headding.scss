@@ -1,0 +1,486 @@
+.about-headding {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 137px;
+    padding-bottom: 153px;
+    text-align: center !important;
+}
+
+.breadcrumb {
+    .breadcrumb-item {
+        font-weight: 700;
+
+        a {
+            color: $text-color;
+            font-size: 16px;
+        }
+
+        .active {
+            color: $primary-color;
+        }
+    }
+}
+
+@include mobile {
+    .about-headding {
+        padding-top: 130px;
+        padding-bottom: 100px;
+    }
+}
+
+// ////////////
+.Our-mission {
+    margin-bottom: 40px !important;
+    padding-top: 20px
+}
+
+.list {
+    li {
+        margin-bottom: 15px;
+
+        i {
+            color: $primary-color;
+            margin-right: 10px;
+        }
+    }
+}
+
+.mission-img {
+    background: $primary-bg;
+    position: relative;
+    z-index: 100;
+
+    .img {
+        margin-left: -40px;
+        margin-top: -40px;
+        padding-bottom: 40px;
+
+    }
+
+    .primary-radious {
+        position: absolute;
+        width: 73px;
+        height: 73px;
+        border-radius: 50%;
+        background: $secondery-color;
+        opacity: 0.5;
+        left: -70px;
+        top: -70px;
+        z-index: -1;
+    }
+
+    .secondery-radious {
+        position: absolute;
+        width: 81px;
+        height: 81px;
+        border-radius: 50%;
+        background: $primary-color;
+        opacity: 0.5;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .tertiary-radious {
+        position: absolute;
+        width: 105px;
+        height: 105px;
+        border-radius: 50%;
+        background: $tertiary-color;
+        opacity: 0.5;
+        left: -85px;
+        bottom: 0px;
+    }
+}
+
+
+@include mobile {
+
+
+    .mission-img {
+
+        .img {
+            margin-left: -10px;
+            margin-top: -10px;
+            padding-bottom: 10px;
+
+        }
+
+        .primary-radious {
+            width: 35px;
+            height: 35px;
+            left: -10px;
+            top: -25px;
+            z-index: 0;
+        }
+
+        .secondery-radious {
+            width: 40px;
+            height: 40px;
+
+        }
+
+        .tertiary-radious {
+
+            width: 50px;
+            height: 50px;
+
+            left: -10px;
+            bottom: -10px;
+        }
+
+    }
+
+}
+
+@include desktop-lg {
+    .list {
+        li {
+            font-size: 14px;
+        }
+    }
+}
+
+// /////
+.shadow {
+    padding: 30px 25px !important;
+}
+
+.counter-item {
+    border-right: 1px solid $primary-bg;
+
+    h6 {
+        color: $primary-color;
+    }
+
+    &:last-child {
+        border: none;
+    }
+
+    &:nth-child(2) h6 {
+        color: $secondery-color;
+    }
+
+    &:nth-child(3) h6 {
+        color: $tertiary-color;
+    }
+}
+
+// /////////////
+.what-are {
+    background-image: url(/images/about.png);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 180px;
+    padding-bottom: 130px;
+    position: relative;
+
+    .primary-radious-small {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: $secondery-color;
+        opacity: 0.5;
+        left: -100px;
+        top: 100px;
+        z-index: -1;
+    }
+
+    .tertiary-radious-small {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: $tertiary-color;
+        opacity: 0.5;
+        left: -100px;
+        bottom: 100px;
+    }
+}
+
+.what-are-img {
+    background-color: #E0E0E0;
+
+    position: relative;
+    z-index: 100;
+
+    .img {
+        margin-left: 40px;
+        margin-top: -40px;
+        padding-bottom: 40px;
+
+    }
+
+    .primary-radious {
+        position: absolute;
+        width: 73px;
+        height: 73px;
+        border-radius: 50%;
+        background: $secondery-color;
+        opacity: 0.5;
+        right: -70px;
+        top: -70px;
+        z-index: -1;
+    }
+
+    .secondery-radious {
+        position: absolute;
+        width: 81px;
+        height: 81px;
+        border-radius: 50%;
+        background: $primary-color;
+        opacity: 0.5;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .tertiary-radious {
+        position: absolute;
+        width: 105px;
+        height: 105px;
+        border-radius: 50%;
+        background: $tertiary-color;
+        opacity: 0.5;
+        right: -80px;
+        bottom: 10px;
+    }
+
+}
+
+.what-are-text {
+    position: relative;
+
+    .primary-radious {
+        position: absolute;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: $primary-color;
+        opacity: 0.5;
+        right: -90px;
+        top: -100px;
+    }
+
+    .secondery-radious {
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: $secondery-color;
+        opacity: 0.5;
+        right: -120px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .tertiary-radious {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: $tertiary-color;
+        opacity: 0.5;
+        right: 100px;
+        bottom: -80px;
+    }
+}
+
+@include mobile{
+
+    .what-are-img {    
+        position: relative;
+        z-index: 100;
+    
+        .img {
+            margin-left: 10px;
+            margin-top: -10px;
+            padding-bottom: 10px;
+    
+        }
+    
+        .primary-radious {
+            right: 0;
+            top: -40px;
+                }
+    
+        .secondery-radious {
+            width: 60px;
+            height: 60px;
+        }
+    
+        .tertiary-radious {
+            width: 70px;
+            height: 70px;
+            right: -9px;
+            bottom: -25px;
+        }
+    
+    }
+    
+    .what-are-text {
+        position: relative;
+    
+        .primary-radious {
+            right: 0;
+    top: 30px;
+        }
+    
+        .secondery-radious {
+            right: 0;
+            top: 69%;
+        }
+    
+   
+    }
+}
+@include tablet{
+
+    .what-are-img {    
+        position: relative;
+        z-index: 100;
+    
+        .img {
+            margin-left: 30px;
+            margin-top: -30px;
+            padding-bottom: 30px;
+        }
+    
+        .primary-radious {
+            right: 0;
+            top: -40px;
+                }
+    
+        .secondery-radious {
+            width: 60px;
+            height: 60px;
+        }
+    
+        .tertiary-radious {
+            width: 70px;
+            height: 70px;
+            right: -9px;
+            bottom: -25px;
+        }
+    
+    }
+    
+    .what-are-text {
+        position: relative;
+    
+        .primary-radious {
+            right: 0;
+    top: 30px;
+        }
+    
+        .secondery-radious {
+            right: 0;
+            top: 69%;
+        }
+    
+        .tertiary-radious {
+            right: 150px;
+            bottom: -50px;
+        }
+    }
+}
+@include desktop{
+
+    .what-are-img {    
+        position: relative;
+        z-index: 100;
+    
+        .img {
+            margin-left: 10px;
+            margin-top: -10px;
+            padding-bottom: 10px;
+        }
+    
+        .primary-radious {
+            right: -40px;
+            top: -40px;
+                }
+    
+        .secondery-radious {
+            width: 60px;
+            height: 60px;
+        }
+    
+        .tertiary-radious {
+            width: 70px;
+            height: 70px;
+            right: -9px;
+            bottom: -25px;
+        }
+    
+    }
+    
+    .what-are-text {
+        position: relative;
+    
+        .primary-radious {
+            right: 0;
+    top: 30px;
+        }
+    
+        .secondery-radious {
+            right: 0;
+            top: 69%;
+        }
+    
+        .tertiary-radious {
+            right: 150px;
+            bottom: -50px;
+        }
+    }
+}
+@include desktop-lg{
+
+    .what-are-img {    
+        position: relative;
+        z-index: 100;
+    
+        .img {
+            margin-left: 30px;
+            margin-top: -30px;
+            padding-bottom: 30px;
+        }
+    
+        .primary-radious {
+            right: 0;
+            top: -40px;
+                }
+    
+        .secondery-radious {
+            width: 60px;
+            height: 60px;
+        }
+    
+        .tertiary-radious {
+            width: 70px;
+            height: 70px;
+            right: -9px;
+            bottom: -25px;
+        }
+    
+    }
+    
+    .what-are-text {
+        position: relative;
+    
+        .primary-radious {
+            right: 0;
+    top: 30px;
+        }
+    
+        .secondery-radious {
+            right: 0;
+            top: 69%;
+        }
+    
+    }
+}

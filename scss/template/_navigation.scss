@@ -1,0 +1,143 @@
+.fixd-manu ul li a{
+    margin: 10px 20px !important;
+}
+.navigation {
+    background: $primary-bg;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+
+    .nav-link {
+        padding-right: 0rem !important;
+        padding-left: 0rem !important;
+    }
+
+    ul {
+  
+        li {
+            a {
+                font-family: $primary-font;
+                font-weight: 600;
+                font-size: 15px;
+                display: inline-block;
+                margin: 20px 20px;
+                color: $text-color !important;
+                transition: .4s;
+                &:hover{
+                    color: $primary-color !important;
+                }
+            }
+        }
+    }
+
+    .btn {
+        line-height: 0;
+    }
+
+    form {
+        button {
+            padding-top: 13px;
+            padding-bottom: 16px;
+            padding-left: 30px;
+            padding-right: 30px;
+            color: $text-color !important;
+            font-weight: 600;
+            font-size: 15px;
+        }
+    }
+
+    .log-in {
+        i {
+            margin-left: 6px;
+            font-size: 14px;
+            color: $primary-color;
+        }
+    }
+
+    .sign-up{
+        border: 1px solid $primary-color;
+        transition: .4s;
+        &:hover{
+            background: $primary-color;
+            color: #fff !important;
+        }
+    }
+
+    .btn-check:focus+.btn,
+    .btn:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}
+
+@include mobile {
+    .navigation {
+        text-align: center;
+        padding: 20px;
+
+        ul {
+            height: 50vh;
+            overflow:auto ;
+            li {
+                a {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    form {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@include tablet {
+    .navigation {
+        text-align: center;
+        padding: 20px;
+
+        ul {
+            height: 50vh;
+            overflow:auto ;
+            li {
+                a {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    form {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@include desktop {
+    .navbar {
+        text-align: center;
+        padding: 20px;
+
+        ul {
+            height: 50vh;
+            overflow:auto ;
+            li {
+                a {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    form {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@include desktop-lg {
+    .navbar form button {
+        padding: 10px 24px;
+    }
+}
